@@ -1,9 +1,18 @@
 import React from 'react';
+import Template from '@/src/components/Templates/Template';
 
 const Home = () => {
     return (
-        <div>
-            <h1>HOME</h1>
+        <div
+            style={{
+                display: 'flex',
+                justifyContent: 'center',
+                backgroundColor: 'yellow',
+            }}
+        >
+            <div style={{ maxWidth: '480px', backgroundColor: 'white' }}>
+                <Template />
+            </div>
         </div>
     );
 };

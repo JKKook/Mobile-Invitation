@@ -6,6 +6,7 @@ const Document = () => {
         <Html lang='ko'>
             <Head>
                 <meta charSet='utf-8' />
+                <link rel='stylesheet' href='/global.css' />
             </Head>
             <body>
                 <Main />
