@@ -1,6 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'SunBatang-Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/SunBatang-Light.woff')
+        format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url(//fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+
+.nanummyeongjo * {
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+@font-face {
+    font-family: 'Arita-buri-SemiBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Arita-buri-SemiBold.woff')
+        format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 /* 
 :root {
     --foreground-rgb: 0, 0, 0;

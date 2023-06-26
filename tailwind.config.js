@@ -9,6 +9,11 @@ module.exports = {
     ],
 
     theme: {
+        fontFamily: {
+            SunBatang: ['SunBatang-Light'],
+            naum: ['Nanum Myeongjo'],
+            arita: ['Arita-buri-SemiBold'],
+        },
         extend: {
             backgroundImage: {
                 'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
