@@ -2,6 +2,7 @@ import React from 'react';
 
 interface SponToggleProps {
     toggle?: boolean;
+    anotherToggle?: boolean;
     bank?: string;
     account?: string;
     family?: string;
@@ -10,6 +11,7 @@ interface SponToggleProps {
 
 export default function SponDesc({
     toggle,
+    anotherToggle,
     bank,
     account,
     family,
@@ -18,11 +20,7 @@ export default function SponDesc({
     return (
         <>
             <div
-                className={`border p-4 mt-4 mb-8 text-sm font-naum ${
-                    toggle
-                        ? 'transform translate-y-2 opacity-100'
-                        : 'transform -translate-y-0 opacity-0'
-                } transition-all duration-300`}
+                className={`bg-stone-100 border p-4 mt-4 mb-4 text-sm font-naum`}
             >
                 <div className='flex justify-between'>
                     <div className='flex justify-around'>
