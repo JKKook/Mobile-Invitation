@@ -45,8 +45,7 @@ export default function Invitation() {
                         사랑의 이름으로
                         <div></div>
                         지켜나갈 수 있도록
-                        <div></div>
-                        앞날을 축복해 주시면
+                        <div></div>앞 날을 축복해 주시면
                         <div></div>
                         감사하겠습니다.
                     </span>

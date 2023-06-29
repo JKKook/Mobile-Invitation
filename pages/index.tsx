@@ -7,7 +7,7 @@ const Home = () => {
             style={{
                 display: 'flex',
                 justifyContent: 'center',
-                backgroundColor: 'yellow',
+                backgroundColor: 'black',
             }}
         >
             <div style={{ maxWidth: '480px', backgroundColor: 'white' }}>

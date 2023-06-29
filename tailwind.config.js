@@ -13,6 +13,7 @@ module.exports = {
             SunBatang: ['SunBatang-Light'],
             naum: ['Nanum Myeongjo'],
             arita: ['Arita-buri-SemiBold'],
+            suite: ['SUITE-Regular'],
         },
 
         extend: {
