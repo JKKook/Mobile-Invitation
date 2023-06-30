@@ -1,7 +1,15 @@
 import React from 'react';
 import Template from '@/src/components/Templates/Template';
+import { useEffect } from 'react';
+import { useState } from 'react';
 
 const Home = () => {
+    const [mounted, setMounted] = useState<boolean>(false);
+
+    useEffect(() => {
+        setMounted(true);
+    }, []);
+
     return (
         <div
             style={{

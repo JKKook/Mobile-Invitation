@@ -8,12 +8,7 @@ export default function MainImage() {
             <div className='absolute bg-black top-0 left-0 right-0 bottom-0 opacity-[20%]'></div>
 
             <div></div>
-            <Image
-                // className='opacity-80'
-                src={wedding}
-                alt='main-image'
-                width={480}
-            />
+            <Image src={wedding} alt='main-image' width={480} />
 
             <div
                 style={{ writingMode: 'vertical-rl' }}
@@ -25,6 +20,9 @@ export default function MainImage() {
                 <span className='block text-[32px] font-thin tracking-wide'>
                     우리
                 </span>
+            </div>
+            <div className='absolute bottom-[-2px] border-white'>
+                <img className='w-[480px]' src='/images/cal.png' alt='cal' />
             </div>
         </div>
     );

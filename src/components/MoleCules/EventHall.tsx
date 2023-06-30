@@ -36,12 +36,12 @@ export default function EventHall() {
                 </div>
                 <div className='flex-col basis-1/2 items-center justify-center '>
                     <h3 className='font-arita text-center mb-2'>연회장</h3>
-                    <p className='font-SunBatang text-[13px]'>
+                    <div className='font-SunBatang text-[13px]'>
                         예식장 바로 옆에 연회장이 마련되어 있습니다.
                         <div></div>
                         정성스럽게 음식들을 준비했으니 마음껏 즐겨주시길
                         바라겠습니다.
-                    </p>
+                    </div>
                 </div>
             </div>
 
