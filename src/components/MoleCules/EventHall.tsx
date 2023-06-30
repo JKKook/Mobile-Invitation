@@ -1,7 +1,4 @@
-import Image from 'next/image';
 import React from 'react';
-import hall from '../../../public/images/hall.jpeg';
-import resturant from '../../../public/images/resturant.jpeg';
 
 export default function EventHall() {
     return (
@@ -23,9 +20,9 @@ export default function EventHall() {
                     <h3 className='font-arita text-center mb-2'>
                         단독 이벤트 홀
                     </h3>
-                    <p className='font-SunBatang text-[13px]'>
+                    <div className='font-SunBatang text-[13px]'>
                         본 예식은 단독 이벤트 홀에서 이뤄집니다.
-                    </p>
+                    </div>
                 </div>
             </div>
             {/* 연회장 */}
@@ -59,10 +56,10 @@ export default function EventHall() {
                 </div>
                 <div className='flex-col basis-1/2 items-center justify-center '>
                     <h3 className='font-arita text-center mb-2'>주차장</h3>
-                    <p className='font-SunBatang text-[13px]'>
+                    <div className='font-SunBatang text-[13px]'>
                         지상, 지하 주차장이 마련되어 있습니다. 동시 주차
                         1,000대까지 가능합니다
-                    </p>
+                    </div>
                 </div>
             </div>
             <div className='text-center '>

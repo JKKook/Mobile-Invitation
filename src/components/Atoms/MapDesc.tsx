@@ -1,34 +1,39 @@
 import React from 'react';
+import { FaBus } from 'react-icons/fa';
+import { FaSubway } from 'react-icons/fa';
 
 export default function MapDesc() {
     return (
         <>
-            <div>
-                <div>Icon Section</div>
-                <div>
-                    <h1>버스 이용 시</h1>
-                    <span>
-                        삼산월드체육관 하차 시 도보 2분 버스:
-                        24,28,67-1,87,558,79,1200,9300
-                    </span>
-                    <span>
-                        한국만화박물관 하차 시 도보 6분 버스: 565, 53, 59-1, 37,
-                        526, 558, 565, 인천e음 61
-                    </span>
+            <div className='p-4 rounded-sm border-y-2'>
+                <div className='flex items-center py-4'>
+                    <FaBus className='text-3xl text-neutral-400' />
+                    <h1 className='ml-4 font-suite font-[800]'>버스 이용 시</h1>
+                </div>
+                <div className='mt-0 m-4 font-suite'>
+                    <ul className='list-disc'>
+                        <li>삼산월드체육관 하차 시, (도보 2분)</li>
+                        <li className='list-none mb-2'>
+                            버스: 24, 28, 67-1, 87, 558, 79, 1200, 9300
+                        </li>
+                        <li>한국만화박물관 하차 시, (도보 6분)</li>
+                        <li className='list-none'>
+                            버스: 565, 53, 59-1, 37, 526, 558, 565, 인천e음61
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div>
-                <div>Icon Section</div>
-                <div>
-                    <h1>지하철 이용 시</h1>
-                    <span>7호선 삼산체육관역 3번 출구 하차 시 도보 5분</span>
+            <div className='p-4 rounded-sm border-b-2'>
+                <div className='flex items-center py-4'>
+                    <FaSubway className='text-3xl text-rose-200' />
+                    <h1 className='ml-4 font-suite font-[800]'>
+                        지하철 이용 시
+                    </h1>
                 </div>
-            </div>
-            <div>
-                <div>ICON</div>
-                <div>
-                    <span>문의할 곳</span>
-                    <span>032-719-3301</span>
+                <div className='mt-0 m-4 font-suite'>
+                    <ul className='list-disc'>
+                        <li>7호선 삼산체육관역 3번 출구 하차 시, (도보 5분)</li>
+                    </ul>
                 </div>
             </div>
         </>
