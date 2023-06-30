@@ -68,9 +68,9 @@ export default function Invitation() {
                         </span>
                     </div>
                     <div className='flex justify-center items-center font-arita p-2'>
-                        <span className='font-extrabold font-naum'>이인규</span>
+                        <span className='font-extrabold font-naum'>이광택</span>
                         ·
-                        <span className='font-extrabold font-naum'>이수민</span>
+                        <span className='font-extrabold font-naum'>조동순</span>
                         <span className='font-extrabold font-naum'>의</span>
                         <span className='pl-2 text-sm text-gray-800'>차녀</span>
                         <span className='pl-2 text-2xl font-SunBatang translate-y-[-10%] text-gray-600'>
