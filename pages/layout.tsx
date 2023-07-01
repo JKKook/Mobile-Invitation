@@ -1,5 +1,5 @@
 // These styles apply to every route in the application
-import './global.css';
+import '../styles/global.css';
 import Home from './index';
 
 export default function RootLayout({
