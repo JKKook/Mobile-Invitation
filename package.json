@@ -12,6 +12,7 @@
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@types/aos": "^3.0.4",
+    "@types/navermaps": "^3.6.5",
     "@types/node": "20.3.1",
     "@types/react": "18.2.14",
     "@types/react-datepicker": "^4.11.2",

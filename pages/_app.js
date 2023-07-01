@@ -1,5 +1,5 @@
 import React from 'react';
-import '@/global.css';
+import '../styles/global.css';
 
 const App = ({ Component, pageProps }) => {
     return (
