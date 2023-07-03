@@ -18,7 +18,7 @@ export default function SponToggle() {
 
     return (
         <>
-            <div className='p-8 relative flex-col justify-center'>
+            <div className='select-none p-8 relative flex-col justify-center'>
                 <div className='pb-4'>
                     <div className='flex items-center justify-center'>
                         <div
@@ -37,24 +37,24 @@ export default function SponToggle() {
                         <div>
                             <SponDesc
                                 toggle={toggle}
-                                bank='신한'
-                                account='110-209-080220'
+                                bank='농협'
+                                account='59502121768'
                                 family='아버지'
                                 name='이인규'
                             />
                             <SponDesc
                                 toggle={toggle}
-                                bank='신한'
-                                account='110-209-080220'
-                                family='아버지'
-                                name='이인규'
+                                bank='농협'
+                                account='110612019975'
+                                family='어머니'
+                                name='이수민'
                             />
                             <SponDesc
                                 toggle={toggle}
                                 bank='신한'
                                 account='110-209-080220'
-                                family='아버지'
-                                name='이인규'
+                                family='신 랑'
+                                name='이종일'
                             />
                         </div>
                     )}
@@ -79,24 +79,17 @@ export default function SponToggle() {
                     <>
                         <SponDesc
                             anotherToggle={anotherToggle}
-                            bank='신한'
-                            account='110-209-080220'
+                            bank='신협중앙회'
+                            account='132028205826'
                             family='아버지'
-                            name='이인규'
+                            name='이광택'
                         />
                         <SponDesc
                             anotherToggle={anotherToggle}
                             bank='신한'
                             account='110-209-080220'
-                            family='아버지'
-                            name='이인규'
-                        />
-                        <SponDesc
-                            anotherToggle={anotherToggle}
-                            bank='신한'
-                            account='110-209-080220'
-                            family='아버지'
-                            name='이인규'
+                            family='신 부'
+                            name='이효민'
                         />
                     </>
                 )}
