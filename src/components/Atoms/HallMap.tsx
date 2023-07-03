@@ -7,6 +7,7 @@ const HallMap = () => {
 
     useEffect(() => {
         if (mapRef.current) {
+            console.log('current값 :', mapRef.current);
             const mapOptions = {
                 center: new naver.maps.LatLng(
                     37.50772800000005,

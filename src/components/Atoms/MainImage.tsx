@@ -1,8 +1,45 @@
 import Image from 'next/image';
 import React from 'react';
+import AOS from 'aos';
+import { useEffect } from 'react';
 import wedding from '../../../public/images/wedding6.jpeg';
+import { useRef } from 'react';
 
 export default function MainImage() {
+    // text event Handling
+    const textRef = useRef<HTMLSpanElement>(null);
+
+    const handleScrollTextEvent = () => {
+        if (textRef.current) {
+            const spanElement = textRef.current;
+
+            let opacity = 0;
+
+            const intervalId = setInterval(() => {
+                spanElement.style.opacity = String(opacity / 100);
+                opacity += 30;
+
+                if (opacity > 100) {
+                    clearInterval(intervalId);
+                }
+            }, 2000);
+        }
+    };
+
+    useEffect(() => {
+        // handle Text Event
+        handleScrollTextEvent();
+        // AOS 초기화
+        AOS.init();
+
+        window.addEventListener('scroll', handleScrollTextEvent);
+
+        // unMount
+        return () => {
+            window.removeEventListener('scroll', handleScrollTextEvent);
+        };
+    }, []);
+
     return (
         <div className='relative'>
             <div className='absolute bg-black top-0 left-0 right-0 bottom-0 opacity-[20%]'></div>
@@ -13,53 +50,84 @@ export default function MainImage() {
                 style={{ writingMode: 'vertical-rl' }}
                 className='text-white font-SunBatang absolute top-6 right-10'
             >
-                <div data-aos='fade-down' data-aos-duration='3000'>
+                <div
+                    data-aos='fade-down'
+                    data-aos-duration='3000'
+                    data-aos-offset='100'
+                >
                     <span className='absolute top-0 right-10 text-[32px] font-thin tracking-[6px]'>
                         우
                     </span>
                 </div>
-                <div data-aos='fade-down' data-aos-duration='2000'>
+                <div
+                    data-aos='fade-down'
+                    data-aos-delay='1100'
+                    data-aos-duration='3000'
+                >
                     <span className='absolute top-10 right-10 text-[32px] font-thin tracking-[6px]'>
                         리
                     </span>
                 </div>
-                <div data-aos='fade-down' data-aos-duration='5000'>
+                <div
+                    data-aos='fade-down'
+                    data-aos-delay='1600'
+                    data-aos-duration='3000'
+                    data-aos-offset='100'
+                >
                     <span className='absolute top-20 right-1 text-[32px] font-thin tracking-[6px]'>
                         결
                     </span>
                 </div>
-                <div data-aos='fade-down' data-aos-duration='4000'>
+                <div
+                    data-aos='fade-down'
+                    data-aos-delay='2200'
+                    data-aos-duration='3000'
+                    data-aos-offset='300'
+                >
                     <span className='absolute top-32 right-1 text-[32px] font-thin tracking-[6px]'>
                         혼
                     </span>
                 </div>
-                <div data-aos='fade-down' data-aos-duration='3000'>
+                <div
+                    data-aos='fade-down'
+                    data-aos-delay='2600'
+                    data-aos-duration='3000'
+                    data-aos-offset='500'
+                >
                     <span className='absolute top-44 right-1 text-[32px] font-thin tracking-[6px]'>
                         합
                     </span>
                 </div>
-                <div data-aos='fade-down' data-aos-duration='2000'>
+                <div
+                    data-aos='fade-down'
+                    data-aos-delay='2800'
+                    data-aos-duration='3000'
+                    data-aos-offset='500'
+                >
                     <span className='absolute top-56 right-1 text-[32px] font-thin tracking-[6px]'>
                         니
                     </span>
                 </div>
-                <div data-aos='fade-down' data-aos-duration='1000'>
+                <div
+                    data-aos='fade-down'
+                    data-aos-delay='3000'
+                    data-aos-duration='3000'
+                    data-aos-offset='500'
+                >
                     <span className='absolute top-[17rem] right-1 text-[32px] font-thin tracking-[6px]'>
                         다
                     </span>
                 </div>
-
-                {/* <span className='block text-[32px] font-thin translate-y-[25%] tracking-[6px]'>
-                        결혼합니다
-                    </span> */}
-
-                {/* <span className='block text-[32px] font-thin tracking-wide'>
-                        우리
-                    </span> */}
             </div>
 
-            <div className='absolute bottom-[-2px] border-white'>
+            <div className='absolute bottom-[-2px] border-white text-center'>
                 <img className='w-[480px]' src='/images/cal.png' alt='cal' />
+                <span
+                    ref={textRef}
+                    className='text-slate-700 font-naum absolute translate-x-[-50%] translate-y-[-100%] transition duration-200 ease-in '
+                >
+                    scroll
+                </span>
             </div>
         </div>
     );
