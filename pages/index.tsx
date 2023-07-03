@@ -1,5 +1,5 @@
 import React from 'react';
-import Template from '@/src/components/Templates/Template';
+import Template from '../src/components/Templates/Template';
 import { useEffect } from 'react';
 import { useState } from 'react';
 
