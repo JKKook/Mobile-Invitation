@@ -1,20 +1,43 @@
-import React from 'react';
-import { useEffect } from 'react';
-import { useRef } from 'react';
+import Script from 'next/script';
+import { useEffect, useRef } from 'react';
+// import naver, { NaverMap } from 'react-naver-maps';
 
-export default function HallMap() {
-    const mapElement = useRef(null);
+const HallMap = () => {
+    const mapRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
-        const { naver } = window;
-        if (!mapElement || naver) return;
+        if (mapRef.current) {
+            const mapOptions = {
+                center: new naver.maps.LatLng(
+                    37.50772800000005,
+                    126.73702298180635,
+                ),
+                zoom: 15,
+            };
 
-        // 지도에 표시할 위치의 위도, 경도
+            const map = new naver.maps.Map(mapRef.current, mapOptions);
+
+            const markerOptions = {
+                position: new naver.maps.LatLng(
+                    37.50772800000005,
+                    126.73702298180635,
+                ),
+                map,
+            };
+
+            const marker = new naver.maps.Marker(markerOptions);
+        }
     }, []);
 
     return (
-        <div>
-            <h1>네이버 지도</h1>
-        </div>
+        <>
+            <Script
+                strategy='beforeInteractive'
+                src={`https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=${process.env.NEXT_PUBLIC_MAP_KEY}`}
+            ></Script>
+            <div ref={mapRef} style={{ width: '100%', height: '400px' }} />
+        </>
     );
-}
+};
+
+export default HallMap;

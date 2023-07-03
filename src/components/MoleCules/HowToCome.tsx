@@ -13,7 +13,7 @@ export default function HowToCome() {
                 />
             </div>
             <div className='flex justify-center mb-10 text-2xl'>
-                <h3 className='text-gray-600 font-naum  pb-6 font-bold'>
+                <h3 className='text-gray-600 font-naum border-b-2 pb-6 font-bold'>
                     오시는 길
                 </h3>
             </div>
