@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 export default function Sponsor() {
     return (
-        <div className='mb-[8rem]'>
+        <div className='my-[8rem]'>
             <div className='flex justify-center mb-[4rem]'>
                 <Image
                     className='opacity-30'

@@ -14,6 +14,7 @@ module.exports = {
             naum: ['Nanum Myeongjo'],
             arita: ['Arita-buri-SemiBold'],
             suite: ['SUITE-Regular'],
+            kotra: ['KOTRAHOPE'],
         },
 
         extend: {
