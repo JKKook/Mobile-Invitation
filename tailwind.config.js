@@ -15,6 +15,7 @@ module.exports = {
             arita: ['Arita-buri-SemiBold'],
             suite: ['SUITE-Regular'],
             kotra: ['KOTRAHOPE'],
+            seoul: ['SeoulHangangM'],
         },
 
         extend: {

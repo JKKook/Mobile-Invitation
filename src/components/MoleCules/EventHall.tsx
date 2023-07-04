@@ -3,8 +3,11 @@ import React from 'react';
 export default function EventHall() {
     return (
         <div className='my-32 mx-10'>
-            <div className='flex justify-center mb-10 text-2xl'>
-                <h3 className='text-gray-600 font-naum border-b-2 pb-6 font-bold'>
+            <div className='flex-col items-center text-center justify-center mb-[5rem]'>
+                <h3 className='italic text-gray-600 font-naum pb-6 mb-6'>
+                    INFORMATION
+                </h3>
+                <h3 className='text-xl text-gray-600 font-seoul border-b-2 pb-6 font-bold'>
                     저희 결혼식을 소개합니다
                 </h3>
             </div>

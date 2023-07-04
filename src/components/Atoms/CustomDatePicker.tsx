@@ -7,11 +7,14 @@ export default function CustomDatePicker() {
 
     return (
         <div>
-            <div className='flex-col text-center items-center justify-center p-6'>
-                <p className='text-sm font-naum'>THE WEDDING DAY</p>
-                <p className='text-xl py-6 font-arita border-b-2'>
-                    2023년 10월 07일 토요일 오후 1시
+            <div className='flex-col text-center items-center justify-center p-6 border-b-2'>
+                <p className='italic text-gray-600 font-naum pb-6 mb-6'>
+                    THE WEDDING DAY
                 </p>
+                <p className='text-xl py-4 font-seoul'>
+                    2023년 10월 07일 토요일
+                </p>
+                <p className='font-seoul text-[18px]'>오후 1시 20분</p>
             </div>
             <CalendarDate />
             <div>
