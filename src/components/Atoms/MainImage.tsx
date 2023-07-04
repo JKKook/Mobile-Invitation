@@ -16,6 +16,7 @@ export default function MainImage() {
             let opacity = 0;
 
             const intervalId = setInterval(() => {
+                // opactiy의 값을 증가해서 3번의 변화를 주어서 깜빡거리는 효과를 좀 더 극명하게 전달
                 spanElement.style.opacity = String(opacity / 100);
                 opacity += 30;
 
