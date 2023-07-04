@@ -26,7 +26,7 @@ export default function Invitation() {
                 <div className='relative flex justify-center px-10 text-center'>
                     <span
                         style={{ display: 'flex' }}
-                        className='flex-col font-naum text-ms gap-2'
+                        className='flex-col italic font-seoul text-stone-500 text-ms gap-2'
                     >
                         서로가 마주보며
                         <div></div>
@@ -61,20 +61,22 @@ export default function Invitation() {
                 </div>
                 <div>
                     <div className='flex justify-center items-center font-arita p-2'>
-                        <span className='font-extrabold font-naum'>이인규</span>
+                        <span className='font-extrabold font-seoul'>
+                            이인규
+                        </span>
                         ·
-                        <span className='font-extrabold font-naum'>이수민</span>
-                        <span className='font-extrabold font-naum'>의</span>
+                        <span className='font-extrabold font-seoul'>이수민</span>
+                        <span className='font-extrabold font-seoul'>의</span>
                         <span className='pl-2 text-sm text-gray-800'>장남</span>
                         <span className='pl-2 text-2xl font-SunBatang translate-y-[-10%] text-gray-600'>
                             종일
                         </span>
                     </div>
                     <div className='flex justify-center items-center font-arita p-2'>
-                        <span className='font-extrabold font-naum'>이광택</span>
+                        <span className='font-extrabold font-seoul'>이광택</span>
                         ·
-                        <span className='font-extrabold font-naum'>조동순</span>
-                        <span className='font-extrabold font-naum'>의</span>
+                        <span className='font-extrabold font-seoul'>조동순</span>
+                        <span className='font-extrabold font-seoul'>의</span>
                         <span className='pl-2 text-sm text-gray-800'>차녀</span>
                         <span className='pl-2 text-2xl font-SunBatang translate-y-[-10%] text-gray-600'>
                             효민
