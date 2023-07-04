@@ -25,8 +25,18 @@ export default function SponDesc({
             const textValue = account;
 
             try {
-                await navigator.clipboard.writeText(textValue as string);
-                alert('계좌번호가 복사 되었습니다');
+                if (navigator.clipboard && navigator.clipboard.writeText) {
+                    await navigator.clipboard.writeText(textValue as string);
+                    alert('계좌번호가 복사 되었습니다');
+                } else {
+                    const textArea = document.createElement('textarea');
+                    textArea.value = textValue as string;
+                    document.body.appendChild(textArea);
+                    textArea.select();
+                    document.execCommand('copy');
+                    document.body.removeChild(textArea);
+                    alert('계좌번호가 복사되었습니다.');
+                }
             } catch (error) {
                 alert(
                     '계좌번호를 복사할 수 없습니다, 잠시 뒤에 다시 시도해주세요',
