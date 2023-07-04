@@ -127,7 +127,7 @@ export default function MainImage() {
                     data-aos-offset='100'
                     data-aos-duration='3000'
                     data-aos-delay='2000'
-                    className='absolute font-seoul text-[1.1em] text-white top-[16rem] left-[2rem] tracking-wider'
+                    className='absolute font-seoul text-[1.1em] text-white top-[13rem] left-[2rem] tracking-wider'
                 >
                     <p>삼산월드컨벤션센터</p>
                 </div>
@@ -136,7 +136,7 @@ export default function MainImage() {
                     data-aos-offset='100'
                     data-aos-duration='3000'
                     data-aos-delay='3000'
-                    className='italic absolute font-seoul text-[1.0em] text-white top-[18rem] left-8 border-b-2'
+                    className='italic absolute font-seoul text-[1.0em] text-white top-[15rem] left-8 border-b-2'
                 >
                     <span>2023.10.07.(토) 오후 1시 20분</span>
                 </div>
