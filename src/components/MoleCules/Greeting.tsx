@@ -1,7 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
 import flower from '../../../public/images/flower.jpeg';
-import ring from '../../../public/images/ring.jpeg';
 
 export default function Greeting() {
     return (

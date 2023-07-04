@@ -1,6 +1,6 @@
 import { getDay, startOfMonth, endOfMonth, eachDayOfInterval } from 'date-fns';
 
-const CalendarDate = () => {
+export default function CalendarDate() {
     // 2023년 10월로 설정 ** 월은 0부터 시작
     const today = new Date(2023, 9, 1);
     const weekly = ['일', '월', '화', '수', '목', '금', '토'];
@@ -53,6 +53,4 @@ const CalendarDate = () => {
             </div>
         </div>
     );
-};
-
-export default CalendarDate;
+}

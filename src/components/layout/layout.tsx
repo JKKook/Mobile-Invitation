@@ -2,7 +2,7 @@
 import '../../../styles/global.css';
 import Home from '../../../pages/index';
 
-// 공용 레이아웃을 만들 필요가 없음
+// 공용 레이아웃을 만들 필요가 없어서 만들지 않고, Atomic Design으로 작업
 
 export default function RootLayout({
     children,

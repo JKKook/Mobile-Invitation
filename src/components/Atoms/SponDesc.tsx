@@ -13,7 +13,6 @@ interface SponToggleProps {
 
 export default function SponDesc({
     toggle,
-    anotherToggle,
     bank,
     account,
     family,

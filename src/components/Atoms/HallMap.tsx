@@ -1,13 +1,11 @@
 import Script from 'next/script';
 import { useEffect, useRef } from 'react';
-// import naver, { NaverMap } from 'react-naver-maps';
 
-const HallMap = () => {
+export default function HallMap() {
     const mapRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
         if (mapRef.current) {
-            console.log('current값 :', mapRef.current);
             const mapOptions = {
                 center: new naver.maps.LatLng(
                     37.50772800000005,
@@ -39,6 +37,4 @@ const HallMap = () => {
             <div ref={mapRef} style={{ width: '100%', height: '400px' }} />
         </>
     );
-};
-
-export default HallMap;
+}

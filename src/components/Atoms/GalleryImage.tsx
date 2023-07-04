@@ -6,9 +6,7 @@ import { IoIosClose } from 'react-icons/io';
 
 export default function GalleryImage() {
     const [selectedImage, setSelectedImage] = useState<string | null>(null);
-    const [isClosedModal, setIsClosedModal] = useState<boolean>(false);
 
-    // images
     const images = [
         '/images/wedding1.jpeg',
         '/images/wedding4.jpeg',
@@ -22,6 +20,7 @@ export default function GalleryImage() {
         setSelectedImage(image);
     };
 
+    /**모달창, 바깥과 x버튼 클릭 시 닫힘 */
     const handleModalClose = () => {
         setSelectedImage(null);
     };
@@ -33,7 +32,7 @@ export default function GalleryImage() {
 
     return (
         // 이미지 호버 시 , 이미지 클릭 시 이벤트 발생
-        <div className='grid grid-cols-2 gap-6'>
+        <div className='grid grid-cols-2 gap-6 place-items-center'>
             {images.map((image) => (
                 <motion.img
                     key={image}
