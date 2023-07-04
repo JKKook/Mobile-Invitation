@@ -6,7 +6,7 @@ export default function CustomDatePicker() {
     const daysRemain = differenceInDays(new Date(2023, 9, 7), new Date());
 
     return (
-        <div data-aos='fade-down' data-aos-duration='2000'>
+        <div data-aos='fade-in' data-aos-duration='2000'>
             <div className='flex-col text-center items-center justify-center p-6 border-b-2'>
                 <p className='italic text-gray-600 font-naum pb-6 mb-6'>
                     THE WEDDING DAY
