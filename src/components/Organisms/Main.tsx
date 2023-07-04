@@ -9,7 +9,7 @@ export default function Main() {
         <>
             <Greeting />
             <CustomDatePicker />
-            <Sponsor />
+
             <EventHall />
         </>
     );

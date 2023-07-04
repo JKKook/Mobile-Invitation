@@ -20,10 +20,10 @@ export default function EventHall() {
                     />
                 </div>
                 <div className='flex-col basis-1/2 items-center justify-center '>
-                    <h3 className='font-arita text-center mb-2'>
+                    <h3 className='font-seoul text-center mb-2 text-slate-800'>
                         단독 이벤트 홀
                     </h3>
-                    <div className='font-SunBatang text-[13px]'>
+                    <div className='font-suite text-[13px] rounded-xl bg-slate-100 p-4'>
                         본 예식은 단독 이벤트 홀에서 이뤄집니다.
                     </div>
                 </div>
@@ -38,18 +38,18 @@ export default function EventHall() {
                     />
                 </div>
                 <div className='flex-col basis-1/2 items-center justify-center '>
-                    <h3 className='font-arita text-center mb-2'>연회장</h3>
-                    <div className='font-SunBatang text-[13px]'>
-                        예식장 바로 옆에 연회장이 마련되어 있습니다.
-                        <div></div>
-                        정성스럽게 음식들을 준비했으니 마음껏 즐겨주시길
-                        바라겠습니다.
+                    <h3 className='font-seoul text-center mb-2 text-slate-800'>
+                        연회장
+                    </h3>
+                    <div className='font-suite text-[13px] rounded-xl bg-slate-100 p-4'>
+                        예식장 바로 옆에 연회장이 마련되어 있습니다. 정성스럽게
+                        음식들을 준비했으니 마음껏 즐겨주시길 바라겠습니다.
                     </div>
                 </div>
             </div>
 
             {/* 주차장 */}
-            <div className='mb-8 flex justify-around items-center'>
+            <div className='mb-12 flex justify-around items-center'>
                 <div className='basis-1/4'>
                     <img
                         className='w-[100px] h-[100px] rounded-[50%]'
@@ -58,18 +58,20 @@ export default function EventHall() {
                     />
                 </div>
                 <div className='flex-col basis-1/2 items-center justify-center '>
-                    <h3 className='font-arita text-center mb-2'>주차장</h3>
-                    <div className='font-SunBatang text-[13px]'>
+                    <h3 className='font-seoul text-center mb-2 text-slate-800'>
+                        주차장
+                    </h3>
+                    <div className='font-suite text-[13px] rounded-xl bg-slate-100 p-4'>
                         지상, 지하 주차장이 마련되어 있습니다. 동시 주차
                         1,000대까지 가능합니다
                     </div>
                 </div>
             </div>
             <div className='text-center '>
-                <span className='font-naum text-[10px]'>
+                <span className='font-naum text-[12px]'>
                     * 예식과 더불어 여유있는 2시간 30분의 식사시간 주어집니다.
                 </span>
-                <span className='block font-naum text-[10px]'>
+                <span className='block font-naum text-[12px]'>
                     하객 분들은 2시간 무료주차이며, 초과 시 30분당 500원씩
                     발생합니다
                 </span>
@@ -77,7 +79,3 @@ export default function EventHall() {
         </div>
     );
 }
-
-// *
-// 하객 분들은 2시간 무료주차이며, 초과 시 30분당 500원씩
-// 발생합니다

@@ -6,13 +6,6 @@ import { HiLocationMarker } from 'react-icons/hi';
 export default function HowToCome() {
     return (
         <div className='my-32 mx-10'>
-            <div className='opacity-30 mb-32'>
-                <img
-                    className='w-full h-[150px]'
-                    src='images/ring.jpeg'
-                    alt='banner'
-                />
-            </div>
             <div className='flex-col items-center text-center justify-center mb-4'>
                 <h3 className='italic text-gray-600 font-naum pb-6 mb-6'>
                     LOCATION
