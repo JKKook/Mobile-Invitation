@@ -7,6 +7,7 @@ export default function Greeting() {
         <div className='relative mb-[8rem]'>
             <div className='opacity-30'>
                 <Image
+                    className='mini:w-full h-auto'
                     src={flower}
                     alt='flower-banner'
                     width={480}

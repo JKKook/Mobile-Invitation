@@ -79,6 +79,7 @@ export default function GalleryImage() {
                         top: '50%', // 모달창의 수직 위치 (중앙 정렬)
                         left: '50%', // 모달창의 수평 위치 (중앙 정렬)
                         transform: 'translate(-50%, -50%)', // 모달창을 수평 및 수직으로 정확히 가운데로 위치시키는 변형
+                        overflow: 'hidden',
                     },
                 }}
             >

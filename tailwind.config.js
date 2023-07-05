@@ -9,6 +9,9 @@ module.exports = {
     ],
 
     theme: {
+        screens: {
+            mini: { max: '768px' },
+        },
         fontFamily: {
             SunBatang: ['SunBatang-Light'],
             naum: ['Nanum Myeongjo'],
