@@ -32,7 +32,7 @@ export default function CalendarDate() {
     };
 
     return (
-        <div className='select-none max-w-md mx-auto p-6 rounded-3xl bg-slate-50 opacity-90'>
+        <div className='select-none max-w-md mx-auto p-6 mt-8 rounded-3xl opacity-90'>
             <div className='font-kotra text-xl grid grid-cols-7 gap-1 mb-2'>
                 {weekly.map((day) => (
                     <div key={day} className='text-center text-gray-600'>
