@@ -22,16 +22,17 @@ export default function CalendarDate() {
             className += ' text-red-300';
         }
 
+        // D-day
         if (date.getDate() === 7) {
             className =
-                "scale-125 text-white bg-red-400 hover:bg-red-300 after:content-['🎔']";
+                'scale-125 text-white bg-red-400 hover:bg-red-300 hover:rounded-[50%] after:content-["♥︎"] after:pl-[1px] after:text-[12px] after:leading-[50%]';
         }
 
         return className;
     };
 
     return (
-        <div className='select-none max-w-md mx-auto p-4'>
+        <div className='select-none max-w-md mx-auto p-6 rounded-3xl bg-slate-50 opacity-90'>
             <div className='font-kotra text-xl grid grid-cols-7 gap-1 mb-2'>
                 {weekly.map((day) => (
                     <div key={day} className='text-center text-gray-600'>

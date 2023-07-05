@@ -1,12 +1,27 @@
 import { differenceInDays } from 'date-fns';
 import React from 'react';
+import { useEffect, useState } from 'react';
+import { useRef } from 'react';
 import CalendarDate from './CalendarDate';
 
 export default function CustomDatePicker() {
     const daysRemain = differenceInDays(new Date(2023, 9, 7), new Date());
 
+    // 글자 블링크 효과
+    const [isVisible, setIsVisible] = useState<boolean>(true);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setIsVisible((prev) => !prev);
+        }, 2000);
+
+        return () => {
+            clearInterval(interval);
+        };
+    }, []);
+
     return (
-        <div data-aos='fade-in' data-aos-duration='2000'>
+        <div data-aos='fade-up' data-aos-duration='2000'>
             <div className='flex-col text-center items-center justify-center p-6 border-b-2'>
                 <p className='italic text-gray-600 font-naum pb-6 mb-6'>
                     THE WEDDING DAY
@@ -21,7 +36,11 @@ export default function CustomDatePicker() {
                 {daysRemain > 0 && (
                     <div className='py-6 flex justify-center items-center font-kotra'>
                         <span>D-Day까지</span>
-                        <span className='text-rose-500 px-4 text-2xl after:content-["♥︎"]'>
+                        <span
+                            className={`${
+                                isVisible ? 'opacity-100' : 'opacity-0'
+                            } transition duration-700 ease-in-out text-rose-500 px-4 text-2xl after:content-["♥︎"]`}
+                        >
                             {daysRemain}일
                         </span>
                         <span>남았습니다</span>
