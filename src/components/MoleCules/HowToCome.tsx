@@ -14,9 +14,9 @@ export default function HowToCome() {
                     오시는 길
                 </h3>
             </div>
-            <div className='flex items-center p-4'>
+            <div className='flex items-center py-4'>
                 <HiLocationMarker className='text-3xl text-neutral-400' />
-                <p className='ml-4 font-suite'>삼산월드컨벤션센터</p>
+                <p className='ml-2 font-suite'>삼산월드컨벤션센터</p>
             </div>
             <HallMap />
             <MapDesc />

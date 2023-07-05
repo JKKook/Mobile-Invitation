@@ -5,12 +5,12 @@ import { FaSubway } from 'react-icons/fa';
 export default function MapDesc() {
     return (
         <>
-            <div className='p-4 mt-4 rounded-sm'>
+            <div className='my-4 rounded-sm'>
                 <div className='flex items-center py-4'>
                     <FaBus className='text-3xl text-neutral-400' />
                     <h1 className='ml-4 font-suite font-[800]'>버스 이용 시</h1>
                 </div>
-                <div className='mt-0 m-4 font-suite rounded-xl bg-stone-100 p-10'>
+                <div className='font-suite rounded-xl bg-stone-100 p-10'>
                     <ul className='list-disc'>
                         <li>삼산월드체육관 하차 시, (도보 2분)</li>
                         <li className='text-[18px] text-stone-600 font-kotra list-none mb-2'>
@@ -23,12 +23,12 @@ export default function MapDesc() {
                     </ul>
                 </div>
             </div>
-            <div className='p-4 rounded-sm'>
+            <div className='rounded-sm'>
                 <div className='flex items-center py-4'>
                     <FaSubway className='text-3xl text-rose-200' />
                     <h1 className='ml-4 font-suite'>지하철 이용 시</h1>
                 </div>
-                <div className='mt-0 m-4 font-suite rounded-xl bg-rose-50 p-10'>
+                <div className='font-suite rounded-xl bg-rose-50 p-10'>
                     <ul className='list-disc'>
                         <li>7호선 삼산체육관역 3번 출구 하차 시, (도보 5분)</li>
                         <li className='text-[18px] text-stone-600 font-kotra list-none'>

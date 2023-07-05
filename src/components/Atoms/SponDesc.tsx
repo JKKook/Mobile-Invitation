@@ -48,9 +48,7 @@ export default function SponDesc({
     return (
         <>
             <div
-                className={`bg-stone-100 border p-4 mt-4 mb-4 text-sm font-naum ${
-                    toggle ? 'transition-transform duration-300 ease-in' : ''
-                }`}
+                className={`bg-stone-100 border p-4 mt-4 mb-4 text-sm font-naum`}
             >
                 <div className='flex justify-between'>
                     <div className='flex justify-around'>

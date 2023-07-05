@@ -9,11 +9,11 @@ export default function SponToggle() {
     const [anotherToggle, setAnotherToggle] = useState<boolean>(false);
 
     const handleToggle = () => {
-        setToggle(!toggle);
+        setToggle((prev) => !prev);
     };
 
     const anotherHandleToggle = () => {
-        setAnotherToggle(!anotherToggle);
+        setAnotherToggle((prev) => !prev);
     };
 
     return (
@@ -22,19 +22,20 @@ export default function SponToggle() {
                 <div className='pb-4'>
                     <div className='flex items-center justify-center'>
                         <div
-                            className='flex text-[18px] rounded-md p-2 bg-zinc-100 hover:bg-zinc-300 justify-center cursor-pointer font-suite text-md w-full'
+                            className={`flex text-[18px] rounded-md p-2 bg-zinc-100 hover:bg-zinc-300 justify-center cursor-pointer font-SunBatang text-md w-full transition duration-300 
+                            }`}
                             onClick={handleToggle}
                         >
                             신랑 측
                             {toggle ? (
-                                <IoIosArrowDown className='translate-x-[50%] translate-y-[25%]' />
+                                <IoIosArrowDown className='ml-2 mt-2 animate-bounce' />
                             ) : (
-                                <IoIosArrowUp className='translate-x-[50%] translate-y-[25%]' />
+                                <IoIosArrowUp className='ml-2 mt-2 animate-bounce' />
                             )}
                         </div>
                     </div>
                     {toggle && (
-                        <div>
+                        <>
                             <SponDesc
                                 toggle={toggle}
                                 bank='농협'
@@ -56,20 +57,22 @@ export default function SponToggle() {
                                 family='신 랑'
                                 name='이종일'
                             />
-                        </div>
+                        </>
                     )}
                 </div>
 
                 <div className='mt-6 flex items-center justify-center'>
                     <div
-                        className='flex text-[18px] rounded-md p-2 bg-rose-100 hover:bg-rose-200 justify-center cursor-pointer font-suite text-md w-full'
+                        className={`flex text-[18px] rounded-md p-2 bg-rose-100 hover:bg-rose-200 justify-center cursor-pointer font-SunBatang text-md w-full transition duration-300 ${
+                            anotherToggle ? 'ease-in' : 'ease-out'
+                        }`}
                         onClick={anotherHandleToggle}
                     >
                         신부 측
                         {anotherToggle ? (
-                            <IoIosArrowDown className='translate-x-[50%] translate-y-[25%]' />
+                            <IoIosArrowDown className='ml-2 mt-2 animate-bounce' />
                         ) : (
-                            <IoIosArrowUp className='translate-x-[50%] translate-y-[25%]' />
+                            <IoIosArrowUp className='ml-2 mt-2 animate-bounce' />
                         )}
                     </div>
                 </div>

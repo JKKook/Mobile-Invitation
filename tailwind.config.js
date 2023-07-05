@@ -23,6 +23,9 @@ module.exports = {
         },
 
         extend: {
+            keyframes: {
+                myTransition: 'myTransition 1s ease-in',
+            },
             backgroundImage: {
                 'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
                 'gradient-conic':
