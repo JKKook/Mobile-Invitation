@@ -13,7 +13,7 @@ export default function CustomDatePicker() {
     useEffect(() => {
         const interval = setInterval(() => {
             setIsVisible((prev) => !prev);
-        }, 2000);
+        }, 500);
 
         return () => {
             clearInterval(interval);

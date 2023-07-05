@@ -25,7 +25,7 @@ export default function CalendarDate() {
         // D-day
         if (date.getDate() === 7) {
             className =
-                'scale-125 text-white bg-red-400 hover:bg-red-300 hover:rounded-[50%] after:content-["♥︎"] after:pl-[1px] after:text-[12px] after:leading-[50%]';
+                'rounded-[50%] text-white bg-red-400 hover:bg-red-300 after:content-["♥︎"] after:pl-[1px] after:text-[8px]';
         }
 
         return className;
@@ -44,7 +44,7 @@ export default function CalendarDate() {
                 {daysInMonth.map((day) => (
                     <div
                         key={day.toString()}
-                        className={`p-2 text-center rounded ${getDayClassName(
+                        className={`p-4 text-[15px] text-center rounded ${getDayClassName(
                             day,
                         )}`}
                     >
