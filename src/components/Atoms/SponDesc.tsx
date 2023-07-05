@@ -1,6 +1,7 @@
 import React from 'react';
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import { BiCopy } from 'react-icons/bi';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 interface SponToggleProps {
     toggle?: boolean;
@@ -20,29 +21,12 @@ export default function SponDesc({
 }: SponToggleProps) {
     const textRef = useRef<HTMLSpanElement>(null);
 
-    const handleCopyText = async () => {
-        if (textRef.current) {
-            const textValue = account;
+    const [copyText, setCopyText] = useState<String>('');
+    const [copied, setCopied] = useState<boolean>(false);
 
-            try {
-                if (navigator.clipboard && navigator.clipboard.writeText) {
-                    await navigator.clipboard.writeText(textValue as string);
-                    alert('계좌번호가 복사 되었습니다');
-                } else {
-                    const textArea = document.createElement('textarea');
-                    textArea.value = textValue as string;
-                    document.body.appendChild(textArea);
-                    textArea.select();
-                    document.execCommand('copy');
-                    document.body.removeChild(textArea);
-                    alert('계좌번호가 복사되었습니다.');
-                }
-            } catch (error) {
-                alert(
-                    '계좌번호를 복사할 수 없습니다, 잠시 뒤에 다시 시도해주세요',
-                );
-            }
-        }
+    const handleCopy = () => {
+        if (copied) alert('계좌번호가 성공적으로 복사되었습니다');
+        setCopied(true);
     };
 
     return (
@@ -56,11 +40,16 @@ export default function SponDesc({
                         <span className='text-gray-400 px-2'>|</span>
                         <span ref={textRef}>{account}</span>
                     </div>
-                    <div onClick={handleCopyText} className='flex items-center'>
-                        <button className='mr-1 text-[12px] hover:text-red-300'>
-                            copy
-                        </button>
-                        <BiCopy className='cursor-pointer hover:text-red-300' />
+                    <div className='flex items-center'>
+                        <CopyToClipboard
+                            text={account || ''}
+                            onCopy={handleCopy}
+                        >
+                            <button className='mr-1 text-[12px] hover:text-red-300'>
+                                <BiCopy className='ml-4 cursor-pointer hover:text-red-300' />
+                                {copied ? 'Copied!' : 'Copy'}
+                            </button>
+                        </CopyToClipboard>
                     </div>
                 </div>
                 <div className='mt-4'>
