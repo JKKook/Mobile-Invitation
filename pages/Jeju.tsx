@@ -1,9 +1,16 @@
 import React from 'react';
+import Gallery from '../src/components/MoleCules/Gallery';
+import Sponsor from '../src/components/MoleCules/Sponsor';
+import HowToComeJeju from '../src/components/MoleCules/HowToComeJeju';
+import JejuMainImage from '../src/components/Atoms/JejuMainImage';
 
 export default function Jeju() {
     return (
-        <div>
-            <h1>Jeju도 페이지입니다</h1>
-        </div>
+        <>
+            <JejuMainImage />
+            <HowToComeJeju />
+            <Sponsor />
+            <Gallery />
+        </>
     );
 }

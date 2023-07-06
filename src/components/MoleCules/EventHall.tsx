@@ -12,6 +12,7 @@ export default function EventHall() {
                 </h3>
             </div>
 
+            {/* 웨딩홀 */}
             <div className='mb-12 flex justify-around items-center'>
                 <div className='basis-1/6'>
                     <img
@@ -29,12 +30,13 @@ export default function EventHall() {
                     </div>
                 </div>
             </div>
+
             {/* 연회장 */}
             <div className='mb-12 flex justify-around items-center'>
                 <div className='basis-1/6'>
                     <img
                         className='min-w-[100px] h-[100px] rounded-[50%] '
-                        alt='웨딩홀'
+                        alt='연회장'
                         src='/images/resturant.jpeg'
                     />
                 </div>
@@ -50,12 +52,11 @@ export default function EventHall() {
             </div>
 
             {/* 주차장 */}
-
             <div className='mb-12 flex justify-around items-center'>
                 <div className='basis-1/6'>
                     <img
                         className='min-w-[100px] h-[100px] rounded-[50%]'
-                        alt='웨딩홀'
+                        alt='주차장'
                         src='/images/car.jpeg'
                     />
                 </div>

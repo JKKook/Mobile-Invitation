@@ -3,6 +3,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Image from 'next/image';
 import logo from 'public/images/logo.png';
+import icon from 'public/images/icon.png';
 import { useRouter } from 'next/router';
 
 export default function Invitation() {
@@ -44,7 +45,7 @@ export default function Invitation() {
             >
                 <Image
                     className='animate-bounce absolute top-2 right-1'
-                    src={logo}
+                    src={icon}
                     alt='chatbot'
                     width={100}
                 />
