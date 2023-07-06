@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Image from 'next/image';
-import logo from 'public/images/logo.png';
 import icon from 'public/images/icon.png';
 import { useRouter } from 'next/router';
 
@@ -32,27 +31,26 @@ export default function Invitation() {
     const handleNavigatorClick = (e: React.MouseEvent) => {
         e.preventDefault();
         router.push('/Jeju');
-        console.log('router성공');
     };
 
     return (
         <>
-            <nav
+            <div
                 onClick={handleNavigatorClick}
                 className={`cursor-pointer relative sticky top-0 bottom-6 ${
                     isNavigatorVisible ? 'opacity-100' : 'opacity-0'
                 } transition-opacity duration-300 ease-in-out`}
             >
                 <Image
-                    className='animate-bounce absolute top-2 right-1'
+                    className='animate-bounce absolute top-56 right-1'
                     src={icon}
                     alt='chatbot'
                     width={100}
                 />
-                <span className='absolute right-2 bottom-[-10rem] font-seoul text-[12px] text-center w-[90px] break-all bg-rose-100 rounded-3xl p-2'>
+                <span className='absolute right-2 bottom-[-22rem] font-seoul text-[12px] text-center w-[90px] break-all bg-rose-100 rounded-3xl p-2'>
                     제주도 일정은 여기를 눌러주세요
                 </span>
-            </nav>
+            </div>
 
             <div className='my-32 mx-10'>
                 <div
