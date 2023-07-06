@@ -36,18 +36,21 @@ export default function Invitation() {
     return (
         <>
             <div
-                onClick={handleNavigatorClick}
-                className={`cursor-pointer relative sticky top-0 bottom-6 ${
+                className={`z-10 relative sticky top-0 bottom-6 ${
                     isNavigatorVisible ? 'opacity-100' : 'opacity-0'
                 } transition-opacity duration-300 ease-in-out`}
             >
                 <Image
-                    className='animate-bounce absolute top-56 right-1'
+                    onClick={handleNavigatorClick}
+                    className='cursor-pointer animate-bounce absolute top-56 right-1'
                     src={icon}
                     alt='chatbot'
                     width={100}
                 />
-                <span className='absolute right-2 bottom-[-22rem] font-seoul text-[12px] text-center w-[90px] break-all bg-rose-100 rounded-3xl p-2'>
+                <span
+                    onClick={handleNavigatorClick}
+                    className='cursor-pointer absolute right-2 bottom-[-22rem] font-seoul text-[12px] text-center w-[90px] break-all bg-rose-100 rounded-3xl p-2'
+                >
                     제주도 일정은 여기를 눌러주세요
                 </span>
             </div>
