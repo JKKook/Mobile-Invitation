@@ -1,9 +1,8 @@
 import React from 'react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Modal from 'react-modal';
 import { motion } from 'framer-motion';
 import { IoIosClose } from 'react-icons/io';
-import { useEffect } from 'react';
 
 export default function GalleryImage() {
     const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -16,6 +15,11 @@ export default function GalleryImage() {
         '/images/wedding5.jpeg',
         '/images/wedding2.jpeg',
         '/images/wedding7.jpeg',
+        '/images/wedding12.jpeg',
+        '/images/wedding9.jpeg',
+        '/images/wedding10.jpeg',
+        '/images/wedding11.jpeg',
+        // '/images/wedding8.jpeg',
     ];
 
     const handleImageClick = (image: string) => {
@@ -27,29 +31,10 @@ export default function GalleryImage() {
         setSelectedImage(null);
     };
 
-    /**이미지 사이즈에 따른 모달창 리사이징 */
-    // const adjustModalSizebyImage = () => {
-    //     if (selectedImage) {
-    //         const image = new Image();
-    //         image.src = selectedImage;
-    //         image.onload = () => {
-    //             setIsResizing({
-    //                 width: image.width,
-    //                 height: image.height,
-    //             });
-    //         };
-    //     }
-    // };
-
     // Modal에서 스크린리더에서 이미지가 아닌 다른 부분까지 읽는 에러 해결
     if (typeof window !== 'undefined') {
         Modal.setAppElement('#__next');
     }
-
-    // Resizing life-cycle, when image selected
-    // useEffect(() => {
-    //     adjustModalSizebyImage();
-    // }, [selectedImage]);
 
     return (
         // 이미지 호버 시 , 이미지 클릭 시 이벤트 발생
@@ -79,7 +64,7 @@ export default function GalleryImage() {
                         top: '50%', // 모달창의 수직 위치 (중앙 정렬)
                         left: '50%', // 모달창의 수평 위치 (중앙 정렬)
                         transform: 'translate(-50%, -50%)', // 모달창을 수평 및 수직으로 정확히 가운데로 위치시키는 변형
-                        overflow: 'hidden',
+                        // overflow: 'hidden',
                     },
                 }}
             >
@@ -101,6 +86,24 @@ export default function GalleryImage() {
                     <span className='italic font-seoul'>
                         우리의 행복한 추억이 담긴 사진입니다
                     </span>
+                    <div className='italic flex-col gap-2 p-6 font-seoul text-slate-400 text-[12px]'>
+                        서로의 인생을 살아오며,
+                        <div></div>두 사람이 함께한지 육년 째,
+                        <div></div>
+                        서로 덕분에 가장 행복하게 웃었고,
+                        <div></div>그 누구보다 서로를 아껴주며
+                        <div></div>
+                        행복하게 지내고 있습니다.
+                        <div></div>
+                        <div></div>
+                        함께 할 내일이 끊임없이 설레기에
+                        <div></div>
+                        연애의 마침표,
+                        <div></div>
+                        결혼을 하고자 합니다.
+                        <div></div>
+                        많은 응원과 격려 부탁드립니다.
+                    </div>
                 </div>
             </Modal>
         </div>

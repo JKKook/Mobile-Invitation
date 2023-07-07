@@ -10,8 +10,8 @@ module.exports = {
 
     theme: {
         screens: {
-            sm: { max: '480px' },
-            md: { max: '768px' },
+            mobile: {max : '480px'},
+            pad: { max: '768px' },
         },
         fontFamily: {
             SunBatang: ['SunBatang-Light'],

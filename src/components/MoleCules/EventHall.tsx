@@ -16,7 +16,7 @@ export default function EventHall() {
             <div className='mb-12 flex justify-around items-center'>
                 <div className='basis-1/6'>
                     <img
-                        className='min-w-[100px] h-[100px] rounded-[50%] '
+                        className='w-full h-auto mobile:min-w-[100px] mobile:h-[100px] rounded-[50%] '
                         alt='웨딩홀'
                         src='/images/hall.jpeg'
                     />
@@ -35,7 +35,7 @@ export default function EventHall() {
             <div className='mb-12 flex justify-around items-center'>
                 <div className='basis-1/6'>
                     <img
-                        className='min-w-[100px] h-[100px] rounded-[50%] '
+                        className='w-full h-auto mobile:min-w-[100px] mobile:h-[100px] rounded-[50%]  '
                         alt='연회장'
                         src='/images/resturant.jpeg'
                     />
@@ -55,7 +55,7 @@ export default function EventHall() {
             <div className='mb-12 flex justify-around items-center'>
                 <div className='basis-1/6'>
                     <img
-                        className='min-w-[100px] h-[100px] rounded-[50%]'
+                        className='w-full h-auto mobile:min-w-[100px] mobile:h-[100px] rounded-[50%]'
                         alt='주차장'
                         src='/images/car.jpeg'
                     />

@@ -138,7 +138,7 @@ export default function JejuMainImage() {
                     data-aos-delay='3000'
                     className='italic absolute font-seoul text-[1.0em] text-white top-[15rem] left-8 border-b-2'
                 >
-                    <span>2023.09.23.(토)</span>
+                    <span>2023.09.23.(토) 오전 11시 - 오후 5시</span>
                 </div>
             </div>
 
