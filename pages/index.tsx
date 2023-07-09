@@ -12,8 +12,8 @@ const Home = () => {
     }, []);
 
     return (
-        <div className='flex justify-center bg-black'>
-            <div className='mw-[480px] bg-white'>
+        <div className='flex justify-center bg-black '>
+            <div className='mw-[480px] w-[480px]  bg-white'>
                 <Template />
             </div>
         </div>

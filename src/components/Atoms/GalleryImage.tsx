@@ -19,6 +19,7 @@ export default function GalleryImage() {
         '/images/wedding9.jpeg',
         '/images/wedding10.jpeg',
         '/images/wedding11.jpeg',
+        '/images/test.jpeg',
         // '/images/wedding8.jpeg',
     ];
 
@@ -38,13 +39,13 @@ export default function GalleryImage() {
 
     return (
         // 이미지 호버 시 , 이미지 클릭 시 이벤트 발생
-        <div className='grid grid-cols-2 gap-6 place-items-center'>
+        <div className='grid grid-cols-2 gap-2 place-items-center'>
             {images.map((image) => (
                 <motion.img
                     key={image}
                     src={image}
                     alt='Gallery'
-                    className='rounded-md cursor-pointer mw-[200px] h-auto '
+                    className='rounded-md cursor-pointer mw-[200px] w-full h-[80%] [&>*:nth-child(8)]:mw-[400px]'
                     onClick={() => handleImageClick(image)}
                     whileHover={{
                         scale: 1.1,

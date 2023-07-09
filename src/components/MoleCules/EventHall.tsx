@@ -14,18 +14,18 @@ export default function EventHall() {
 
             {/* 웨딩홀 */}
             <div className='mb-12 flex justify-around items-center'>
-                <div className='basis-1/6'>
+                <div className='basis-[25%]'>
                     <img
-                        className='w-full h-auto mobile:min-w-[100px] mobile:h-[100px] rounded-[50%] '
+                        className='w-full rounded-[50%] '
                         alt='웨딩홀'
-                        src='/images/hall.jpeg'
+                        src='/images/hall.jpg'
                     />
                 </div>
                 <div className='flex-col pl-2 basis-2/3 items-center justify-center'>
                     <h3 className='font-seoul pl-[4%] pb-[2%] text-sm text-slate-900'>
                         단독 이벤트 홀
                     </h3>
-                    <div className='font-suite flex items-center text-[13px] h-[80px] break-keep rounded-xl bg-slate-100 p-4'>
+                    <div className='font-suite flex items-center text-[13px] h-[10%] break-keep rounded-xl bg-slate-100 p-4'>
                         본 예식은 단독 이벤트 홀에서 이뤄집니다.
                     </div>
                 </div>
@@ -33,18 +33,18 @@ export default function EventHall() {
 
             {/* 연회장 */}
             <div className='mb-12 flex justify-around items-center'>
-                <div className='basis-1/6'>
+                <div className='basis-[25%]'>
                     <img
-                        className='w-full h-auto mobile:min-w-[100px] mobile:h-[100px] rounded-[50%]  '
+                        className='w-full rounded-[50%]  '
                         alt='연회장'
-                        src='/images/resturant.jpeg'
+                        src='/images/resturant.jpg'
                     />
                 </div>
                 <div className='flex-col pl-2 basis-2/3 items-center justify-center '>
                     <h3 className='font-seoul pl-[4%] pb-[2%] text-sm text-slate-900'>
                         연회장
                     </h3>
-                    <div className='font-suite text-[13px] flex justify-center items-center h-[80px] break-keep rounded-xl bg-slate-100 p-4'>
+                    <div className='font-suite text-[13px] flex justify-center items-center h-[10%] break-keep rounded-xl bg-slate-100 p-4'>
                         예식장 바로 옆에 연회장이 마련되어 있습니다. 정성스럽게
                         음식들을 준비했으니 마음껏 즐겨주시길 바라겠습니다.
                     </div>
@@ -53,18 +53,18 @@ export default function EventHall() {
 
             {/* 주차장 */}
             <div className='mb-12 flex justify-around items-center'>
-                <div className='basis-1/6'>
+                <div className='basis-[25%]'>
                     <img
-                        className='w-full h-auto mobile:min-w-[100px] mobile:h-[100px] rounded-[50%]'
+                        className='w-full rounded-[50%]'
                         alt='주차장'
-                        src='/images/car.jpeg'
+                        src='/images/car.jpg'
                     />
                 </div>
                 <div className='flex-col pl-2 basis-2/3 items-center justify-center '>
                     <h3 className='font-seoul pl-[4%] pb-[2%] text-sm text-slate-900'>
                         주차장
                     </h3>
-                    <div className='font-suite text-[13px] flex justify-center items-center h-[80px] break-keep rounded-xl bg-slate-100 p-4'>
+                    <div className='font-suite text-[13px] flex justify-center items-center h-[10%] break-keep rounded-xl bg-slate-100 p-4'>
                         지상, 지하 주차장이 마련되어 있습니다. 동시 주차
                         1,000대까지 가능합니다
                     </div>

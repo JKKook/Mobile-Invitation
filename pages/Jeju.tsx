@@ -6,11 +6,13 @@ import JejuMainImage from '../src/components/Atoms/JejuMainImage';
 
 export default function Jeju() {
     return (
-        <>
-            <JejuMainImage />
-            <HowToComeJeju />
-            <Sponsor />
-            <Gallery />
-        </>
+        <div className='flex justify-center bg-black'>
+            <div className='mw-[480px] w-[480px]  bg-white'>
+                <JejuMainImage />
+                <HowToComeJeju />
+                <Sponsor />
+                <Gallery />
+            </div>
+        </div>
     );
 }
