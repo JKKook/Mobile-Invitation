@@ -3,6 +3,7 @@ import Gallery from '../src/components/MoleCules/Gallery';
 import Sponsor from '../src/components/MoleCules/Sponsor';
 import HowToComeJeju from '../src/components/MoleCules/HowToComeJeju';
 import JejuMainImage from '../src/components/Atoms/JejuMainImage';
+import KakaoShare from '../src/components/Atoms/KakaoShare';
 
 export default function Jeju() {
     return (
@@ -12,6 +13,7 @@ export default function Jeju() {
                 <HowToComeJeju />
                 <Sponsor />
                 <Gallery />
+                <KakaoShare />
             </div>
         </div>
     );

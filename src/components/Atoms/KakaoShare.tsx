@@ -6,6 +6,7 @@ import { useEffect } from 'react';
 export default function KakaoShare() {
     const handleShareBtn = () => {
         const url = 'https://wedding-oct.vercel.app';
+        const thumbnail = '/images/real1.jpeg';
         // const apiKey = process.env.NEXT_PUBLIC_KAKAO_API_KEY;
         // ** Property 'Kakao' does not exist on type 'Window & typeof globalThis'.
         // global.d.ts 타입 규정 => include
@@ -23,17 +24,12 @@ export default function KakaoShare() {
                     title: '종일 ♥︎ 효민 결혼식',
                     description:
                         '#결혼식 #부천 #삼산월드컨벤션 #제주 #오션스위츠',
-                    imageUrl: '/images/real1.jpeg',
+                    imageUrl: thumbnail,
                     link: {
                         // [내 애플리케이션] > [플랫폼] 에서 등록한 사이트 도메인과 일치해야 함
                         mobileWebUrl: url,
                         webUrl: url,
                     },
-                },
-                social: {
-                    likeCount: 286,
-                    commentCount: 45,
-                    sharedCount: 845,
                 },
                 buttons: [
                     {
@@ -60,18 +56,32 @@ export default function KakaoShare() {
     }, []);
 
     return (
-        <div>
-            <Link
-                className='rounded-[50%]'
-                onClick={handleShareBtn}
-                id='kakaotalk-sharing-btn'
-                href='javascript:;'
-            >
-                <img
-                    src='https://developers.kakao.com/assets/img/about/logos/kakaotalksharing/kakaotalk_sharing_btn_medium.png'
-                    alt='카카오톡 공유 보내기 버튼'
-                />
-            </Link>
+        <div className='bg-gray-900'>
+            <div className='flex-col justify-center items-center p-4'>
+                <div className='flex-col text-center font-suite italic text-gray-300 text-sm p-6'>
+                    <p className='italic text-gray-600 font-naum mb-6'>
+                        Thanks To
+                    </p>
+                    <p>언제나 곁을 따뜻하게 지켜주신</p>
+                    <div></div>
+                    <p>양가 부모님과 사랑으로 응원해주시는</p>
+                    <div></div>
+                    <p>모든 분들께 감사드립니다.</p>
+                </div>
+                <div className='flex justify-center items-center text-center pb-4'>
+                    <Link
+                        onClick={handleShareBtn}
+                        id='kakaotalk-sharing-btn'
+                        href='javascript:;'
+                    >
+                        <img
+                            className='w-[35px] h-auto'
+                            src='https://developers.kakao.com/assets/img/about/logos/kakaotalksharing/kakaotalk_sharing_btn_medium.png'
+                            alt='카카오톡 공유 보내기 버튼'
+                        />
+                    </Link>
+                </div>
+            </div>
         </div>
     );
 }
