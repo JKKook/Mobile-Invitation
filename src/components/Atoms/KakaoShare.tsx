@@ -72,9 +72,9 @@ export default function KakaoShare() {
                 </div>
                 <div className='flex justify-center items-center text-center pb-4'>
                     <Link
+                        href='#'
                         onClick={handleShareBtn}
                         id='kakaotalk-sharing-btn'
-                        href='javascript:;'
                     >
                         <img
                             className='w-[35px] h-auto'
