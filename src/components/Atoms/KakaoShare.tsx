@@ -20,14 +20,14 @@ export default function KakaoShare() {
                 container: '#kakaotalk-sharing-btn',
                 objectType: 'feed',
                 content: {
-                    title: '딸기 치즈 케익',
-                    description: '#케익 #딸기 #삼평동 #카페 #분위기 #소개팅',
-                    imageUrl:
-                        'http://k.kakaocdn.net/dn/Q2iNx/btqgeRgV54P/VLdBs9cvyn8BJXB3o7N8UK/kakaolink40_original.png',
+                    title: '종일 ♥︎ 효민 결혼식',
+                    description:
+                        '#결혼식 #부천 #삼산월드컨벤션 #제주 #오션스위츠',
+                    imageUrl: '/images/real1.jpeg',
                     link: {
                         // [내 애플리케이션] > [플랫폼] 에서 등록한 사이트 도메인과 일치해야 함
-                        mobileWebUrl: 'https://developers.kakao.com',
-                        webUrl: 'https://developers.kakao.com',
+                        mobileWebUrl: url,
+                        webUrl: url,
                     },
                 },
                 social: {
@@ -39,15 +39,15 @@ export default function KakaoShare() {
                     {
                         title: '웹으로 보기',
                         link: {
-                            mobileWebUrl: 'https://developers.kakao.com',
-                            webUrl: 'https://developers.kakao.com',
+                            mobileWebUrl: url,
+                            webUrl: url,
                         },
                     },
                     {
                         title: '앱으로 보기',
                         link: {
-                            mobileWebUrl: 'https://developers.kakao.com',
-                            webUrl: 'https://developers.kakao.com',
+                            mobileWebUrl: url,
+                            webUrl: url,
                         },
                     },
                 ],
