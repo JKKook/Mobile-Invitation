@@ -53,7 +53,7 @@ export default function SponToggle() {
                             <SponDesc
                                 toggle={toggle}
                                 bank='신한'
-                                account='update 예정'
+                                account='110300015355'
                                 family='신 랑'
                                 name='이종일'
                             />
@@ -90,7 +90,7 @@ export default function SponToggle() {
                         <SponDesc
                             anotherToggle={anotherToggle}
                             bank='신한'
-                            account='update 예정'
+                            account='110305648044'
                             family='신 부'
                             name='이효민'
                         />
