@@ -26,7 +26,7 @@ export default function KakaoShare() {
                     description:
                         '#결혼식 #부천 #삼산월드컨벤션 #제주 #오션스위츠',
                     imageUrl:
-                        'https://pixabay.com/link/?ua=cd3%3Dimage%26cd7%3Dko%253A%25EA%25B2%25B0%25ED%2598%25BC%253AKOR%26ec%3Dapi_ad%26ea%3Dnavigate%26el%3Dgetty%26tid%3DUA-20223345-1%26dr%3Dhttps%253A%252F%252Fpixabay.com%252Fko%252Fimages%252Fsearch%252Fwedding%252F%253Fpagi%253D3&sp=%2524%3Dadvertisement_clicked%26user_action%3Dnavigate%26ad_partner%3Dgetty%26ad_content%3Dapi_ad%26ad_type%3D%26media_type%3Dphoto%26media_subtype%3D%26media_id%3D&next=https%3A%2F%2Fwww.istockphoto.com%2Fphoto%2Fthe-bride-and-groom-use-the-little-finger-together-lovely-couple-hold-hand-with-gm1303189272-394718470%3Futm_source%3Dpixabay%26utm_medium%3Daffiliate%26utm_campaign%3DSRP_image_sponsored%26utm_content%3Dhttps%253A%252F%252Fpixabay.com%252Fko%252Fimages%252Fsearch%252F%2525EA%2525B2%2525B0%2525ED%252598%2525BC%252F%26utm_term%3D%25EA%25B2%25B0%25ED%2598%25BC&hash=a07c231bcda9d9ba5a5a3c57961437a3b3de2e84&=',
+                        'https://cdn.pixabay.com/photo/2017/08/06/20/11/wedding-2595862_1280.jpg',
                     link: {
                         // [내 애플리케이션] > [플랫폼] 에서 등록한 사이트 도메인과 일치해야 함
                         mobileWebUrl: url,
