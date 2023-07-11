@@ -6,6 +6,22 @@ import { HiLocationMarker } from 'react-icons/hi';
 export default function HowToComeJeju() {
     return (
         <div className='my-32 mx-10'>
+            <div className='my-32 mx-10'>
+                <div className='flex-col items-center text-center justify-center mb-10'>
+                    <span className='text-xl text-gray-600 font-seoul border-b-2 pb-6 font-bold'>
+                        피로연 안내
+                    </span>
+                </div>
+                <div className='py-6 italic text-slate-500 text-[14px] text-center font-seoul'>
+                    예식장이 멀어
+                    <div></div>
+                    참석하시는 분들을 위해
+                    <div></div>
+                    작은 피로연 자리를
+                    <div></div>
+                    마련하였습니다
+                </div>
+            </div>
             <div className='flex-col items-center text-center justify-center mb-4'>
                 <h3 className='italic text-gray-600 font-naum pb-6 mb-6'>
                     LOCATION
