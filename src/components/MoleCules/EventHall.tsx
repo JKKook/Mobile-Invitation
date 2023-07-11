@@ -2,7 +2,11 @@ import React from 'react';
 
 export default function EventHall() {
     return (
-        <div className='my-32 mx-10'>
+        <div
+            data-aos='fade-up'
+            data-aos-duration='3000'
+            className='my-32 mx-10'
+        >
             <div className='flex-col items-center text-center justify-center mb-[5rem]'>
                 <h3 className='italic text-gray-600 font-naum pb-6 mb-6'>
                     INFORMATION

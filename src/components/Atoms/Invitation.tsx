@@ -37,7 +37,7 @@ export default function Invitation() {
         <>
             <div
                 className={`z-10 relative sticky top-0 bottom-6 ${
-                    isNavigatorVisible ? 'opacity-100' : 'opacity-0'
+                    isNavigatorVisible ? 'opacity-100' : 'opacity-0 z-0 '
                 } transition-opacity duration-300 ease-in-out`}
             >
                 <Image
