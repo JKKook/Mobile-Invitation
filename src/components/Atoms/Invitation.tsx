@@ -49,7 +49,7 @@ export default function Invitation() {
                 />
                 <span
                     onClick={handleNavigatorClick}
-                    className='cursor-pointer absolute right-2 bottom-[-22rem] font-seoul text-[12px] text-center w-[90px] break-all bg-rose-100 rounded-3xl p-2'
+                    className='cursor-pointer absolute right-2 bottom-[-22rem] font-seoul font-bold text-[12px] text-center w-[90px] break-all bg-rose-100 rounded-3xl p-2'
                 >
                     제주도 일정은 여기를 눌러주세요
                 </span>

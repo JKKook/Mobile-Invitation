@@ -30,6 +30,11 @@ export default function HowToComeJeju() {
                     오시는 길
                 </h3>
             </div>
+            <div className='flex-col items-start mb-6 font-naum'>
+                <h2 className='text-md'>오션스위츠 제주호텔</h2>
+                <h3 className='text-sm '>제주도 제주시 탑동해안로 74</h3>
+                <p className='text-sm'>064-720-6000</p>
+            </div>
             <div className='flex items-center py-4'>
                 <HiLocationMarker className='text-3xl text-neutral-400' />
                 <p className='ml-2 font-suite'>오션스위츠 제주호텔</p>
