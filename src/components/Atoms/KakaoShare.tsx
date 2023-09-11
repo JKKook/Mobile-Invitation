@@ -7,7 +7,6 @@ import { useEffect } from 'react';
 export default function KakaoShare() {
     const handleShareBtn = () => {
         const url = 'https://wedding-oct.vercel.app';
-
         const apiKey = process.env.NEXT_PUBLIC_KAKAO_API_KEY;
         // ** Property 'Kakao' does not exist on type 'Window & typeof globalThis'.
         // global.d.ts 타입 규정 => include

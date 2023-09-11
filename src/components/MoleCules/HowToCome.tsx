@@ -18,6 +18,13 @@ export default function HowToCome() {
                     오시는 길
                 </h3>
             </div>
+            <div className='flex-col items-start mb-6 font-naum'>
+                <h2 className='text-md'>삼산월드컨벤션센터</h2>
+                <h3 className='text-sm '>
+                    인천광역시 부평구 체육관로 60 삼산월드체육관
+                </h3>
+                <p className='text-sm'>032-719-3301</p>
+            </div>
             <div className='flex items-center py-4'>
                 <HiLocationMarker className='text-3xl text-neutral-400' />
                 <p className='ml-2 font-suite'>삼산월드컨벤션센터</p>
